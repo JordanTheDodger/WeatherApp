@@ -20,7 +20,9 @@ const darkSky = (latitude,longitude,callback) => {
                 ' timezone. It is ' + body.currently.summary + ' with ' 
                 + body.currently.temperature 
                 +' degrees out. There is a ' + body.currently.precipProbability 
-                +'% chance of rain'
+                +'% chance of rain. Temperature High today is:- '+ body.daily.data[0].temperatureHigh 
+                +' and Temperatur Low today is:- '+ body.daily.data[0].temperatureLow 
+                
             )
         }   
     })
